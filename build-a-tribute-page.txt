@@ -1,0 +1,117 @@
+** start of undefined **
+
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Tribute Page</title>
+    <header id="title">Elon Musk</header>
+    <p class="mini-header">The Innovative Genius of Our Time.</p>
+    </head>
+<main id="main">
+  <body>
+    <div id="img-div">
+      <img src="https://media.wired.com/photos/650399af65d83ff288720473/master/w_1920,c_limit/If-Elon-Musk-Had-Been-a-Happy-Child,-Would-He-Still-Be-Launching-Rockets--Business-Redux-h_16082330.jpg" id="image"><figcaption id="img-caption">Elon Musk and his rocket in the background</figcaption>
+      </img>
+      </div>
+      <p id="tribute-info">Elon Musk's Important Events</p>
+
+    <hr class="divider-line"></hr>
+    <ul>
+      <li><span>June 28, 1971: Birth of Elon Musk</span> - Born in Pretoria, South Africa, Elon Musk showed an early interest in computers and technology, teaching himself to program at a young age and selling his first software, a game called Blastar, at age 12.</li>
+      <li><span>1995: Co-founds Zip2 Corporation</span> - Musk dropped out of a PhD program at Stanford University to pursue entrepreneurial aspirations, co-founding Zip2, a company that provided online city guides software for newspapers. The company was eventually sold to Compaq for nearly $300 million in 1999.</li>
+      <li><span>March 1999: Co-founds X.com, the precursor to PayPal</span> - Musk founded X.com, an online payment company, which through a series of mergers and rebranding, became PayPal. PayPal grew rapidly as a safe way to transact online and was acquired by eBay in 2002 for $1.5 billion in stock.</li>
+      <li><span>May 2002: Founding of SpaceX</span> - With the vision of reducing space travel costs and enabling the colonization of Mars, Musk founded Space Exploration Technologies Corp., or SpaceX. The company aims to develop more affordable rockets and spacecraft.</li>
+      <li><span>February 2004: Joins Tesla Motors</span> - Musk contributed initial funding to Tesla Motors (now Tesla, Inc.) and joined as chairman of the board. He later took a more active role, becoming CEO and product architect, leading the company in developing electric vehicles aimed at reducing global reliance on fossil fuels.</li>
+      <li><span>October 2008: SpaceX's Falcon 1 reaches orbit</span> - After three failed launches, SpaceX's Falcon 1 became the first privately developed liquid-fueled rocket to reach orbit, marking a significant achievement in private space exploration and the commercial spaceflight industry.</li>
+      <li><span>June 2012: The Dragon spacecraft docks with the ISS</span> - SpaceX's Dragon became the first commercial spacecraft to dock with the International Space Station (ISS), supplying cargo under a contract with NASA. This mission marked a new era of commercial spaceflight services to the ISS.</li>
+      <li><span>November 2017: Unveiling of the Tesla Roadster</span> - Musk unveiled the new Tesla Roadster, claiming it to be the fastest production car ever made, with acceleration from 0 to 60 mph in 1.9 seconds. The Roadster highlights Tesla's commitment to pushing the boundaries of electric vehicle performance.</li>
+      </ul>
+      <p class="quote">“When something is important enough, you do it even if the odds are not in your favor.” Elon Musk</p>
+
+      <p class="bottom-info">If you have time, please read more about the genius of our era on his <a id="tribute-link" href="https://en.wikipedia.org/wiki/Elon_Musk" target="_blank">wikipedia</a> page</p>
+
+    </body>
+
+  </main>
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  background-color: #ffffff;
+}
+
+#image {
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+  align-items: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+header {
+  text-align: center;
+  font-size: 40px;
+}
+
+.mini-header {
+  text-align: center;
+}
+
+figcaption {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 15px;
+}
+
+#tribute-info {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.divider-line {
+  border-top: 2px solid;
+  width: 80%;
+}
+
+ul {
+  width: 80%; 
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+span {
+  font-weight: bold;
+}
+
+li {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.quote {
+  font-style: italic;
+  text-align: center;
+}
+
+.bottom-info, a{
+  text-align: center;
+  font-weight: bold;
+}
+
+** end of undefined **
+

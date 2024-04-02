@@ -1,0 +1,127 @@
+** start of undefined **
+
+<!DOCTYPE=html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+    </head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description"> Thank you for taking the time to complete this survey</p1>
+<form id="survey-form">
+ <label id="name-label"> Name </label> <input id="name" type="text" placeholder="Enter your name" required></input>
+
+<label id="email-label"> Email </label> <input id="email" type="email" placeholder="Enter your email" required></input>
+  
+ <label id="number-label"> Age </label> <input id="number" type="number" min="13" max="120" placeholder="Enter your age" value="number" required></input> 
+
+<label id="dropdown-label" >Occupation Type</label>
+ <select id="dropdown" type="dropdown">
+   <option value="" id="">Select an option</option>
+   <option value="Student" id="Student">Student</option>
+   <option value="Full-Time" id="Full-Time">Full-Time</option>
+   <option value="Part-Time" id="Part-Time">Part-Time</option>
+   <option value="Other" id="Other">Other</option>
+ </select>
+<div></div>
+    <label id="Recommend">Would you recommend this to others?</label>
+    <label for="Yes-button" id="Yes-label">Yes
+    <input type="radio" id="Yes-button" value="Yes-button" name="Recommend-button"checked ></input>
+    </label>
+<label for="No-button" id="No-label">No
+    <input type="radio" id="No-button" value="No-button" name="Recommend-button"></input>
+    </label>
+    <div></div>
+  <label id="learn-description">What would you like to learn?</label> 
+  <label id="box-one">
+    <input type="checkbox" value="box-one"> HTML
+      </label>
+      <label id="box-two">
+    <input type="checkbox" value="box-two"> Java
+      </label>
+  <label id="comment-label">Do you have any comments for us?</label>
+    <textarea id="comments"></textarea>
+  <input type="submit" id="submit"></input>
+            </form>
+               </body>
+
+
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background-color: #1b1b32;
+  color: white;
+  font-family: arial;
+  width: 100%;
+  height: 120vh;
+  margin: 0;
+  font-size: 16px;
+}
+
+h1,p {
+  text-align: center; 
+  margin: 1em auto;
+}
+
+form {
+  width: 60vh;
+  max-width: 500px;
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+label, select, input[type="email"], input[type="number"], input[type="text"] {
+  display: block;
+  width: 300px;
+  height: 10px;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  margin: 0 auto;
+}
+
+label[id="Yes-label"] {
+  padding-left: 3em;
+}
+label[id="No-label"] {
+  padding-left: 3.83em;
+  padding-top: 0.5em;
+}
+label[id="Recommend"] {
+  padding-left: 2em;
+}
+label[id="learn-description"], label[id="box-one"], label[id="box-two"] {
+  padding-left: 2em;
+  padding-top: 0.5em;
+}
+
+div {
+  padding: 0.5em;
+}
+
+textarea {
+  display: block;
+  width: 300px;
+  height: 100px;
+  margin-left: 7em;
+}
+
+label[id="comment-label"] {
+  padding-top: 2em;
+  padding-left: 2em;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+}
+
+
+** end of undefined **
+

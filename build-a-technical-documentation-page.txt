@@ -1,0 +1,224 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header class="main-header">HTML Documentation</header>
+    <a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a>
+    <a class="nav-link" href="#Basic_Structure_of_an_HTML_Document">Basic Structure of an HTML Document</a>
+    <a class="nav-link" href="#HTML_Elements">HTML Elements</a>
+    <a class="nav-link" href="#Attributes">Attributes</a>
+    <a class="nav-link" href="#Formatting_Text">Formatting Text</a>
+    <a class="nav-link" href="#Creating_Lists">Creating Lists</a>
+    <a class="nav-link" href="#Adding_Images_and_Videos">Adding Images and Videos</a>
+    <a class="nav-link" href="#Creating_Links">Creating Links</a>
+    <a class="nav-link" href="#Tables">Tables</a>
+    <a class="nav-link" href="#Forms_and_Input">Forms and Input</a>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction_to_HTML">
+      <header class="Section-Headers">Introduction To HTML</header>
+      <p>HTML is the foundational language used to create web pages, defining the structure and content.</p>
+    </section>
+
+    <section class="main-section" id="Basic_Structure_of_an_HTML_Document">
+      <header class="Section-Headers">Basic Structure of an HTML Document</header>
+      <p>Every HTML document starts with a basic structure that includes doctype, html, head, and body tags.</p>
+<pre><code class="code">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </section>
+
+    <section class="main-section" id="HTML_Elements">
+      <header class="Section-Headers">HTML Elements</header>
+      <p>HTML elements are the building blocks of web pages, defined by tags and can have attributes.</p>
+      <pre><code class="code">&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;div&gt;This is a division.&lt;/div&gt;
+</code></pre>
+
+    </section>
+
+    <section class="main-section" id="Attributes">
+      <header class="Section-Headers">Attributes</header>
+      <p>Attributes provide additional information about elements, modifying their behavior or appearance.</p>
+      <pre><code class="code">&lt;img src="image.jpg" alt="An example image"&gt;
+&lt;a href="https://example.com" target="_blank"&gt;Visit Example.com&lt;/a&gt;
+</code></pre>
+    </section>
+
+    <section class="main-section" id="Formatting_Text">
+      <header class="Section-Headers">Formatting Text</header>
+      <p>HTML provides tags for text formatting to emphasize or style text content semantically.</p>
+      <pre><code class="code">&lt;strong&gt;Bold text&lt;/strong&gt;
+&lt;em&gt;Italic text&lt;/em&gt;
+&lt;u&gt;Underlined text&lt;/u&gt;
+</code></pre>
+    </section>
+    <section class="main-section" id="Creating_Lists">
+      <header class="Section-Headers">Creating Lists</header>
+      <p>Lists are used to group a collection of items together, either in an ordered or unordered format.</p>
+      <ul>
+  <li>Use ordered lists (`ol`) when the order of the items is important, like step-by-step instructions.</li>
+  <li>Unordered lists (`ul`) are best for grouping items without any inherent order.</li>
+  <li>Nesting lists inside one another can help organize sub-items or related groups of information.</li>
+</ul>
+      <pre><code class="code">&lt;ol&gt;
+    &lt;li&gt;First item in an ordered list&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+    &lt;li&gt;Item in an unordered list&lt;/li&gt;
+    &lt;li&gt;Another item&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+      </section>
+      <section class="main-section" id="Adding_Images_and_Videos">
+      <header class="Section-Headers">Adding Images and Videos</header>
+      <p>Embed images and videos in your HTML documents to enrich the content of web pages.
+</p>
+<ul>
+  <li>The `alt` attribute in the `img` tag is important for accessibility, as it provides a text alternative for screen readers.<pre><code class="code">&lt;img src="logo.png" alt="Website Logo"&gt;</code></pre></li>
+  <li>For videos, using the `controls` attribute allows users to play, pause, and adjust video playback.<pre><code class="code">&lt;video src="movie.mp4" controls&gt;&lt;/video&gt;</code></pre></li>
+  <li>Consider specifying width and height attributes for images and videos to maintain layout stability as they load.<pre><code class="code">&lt;img src="logo.png" alt="Website Logo" width="600" height="400"&gt;</code></pre></li>
+</ul>
+<pre><code class="code">&lt;img src="logo.png" alt="Website Logo"&gt;
+&lt;video src="movie.mp4" controls&gt;&lt;/video&gt;
+</code></pre>
+      </section>
+      <section class="main-section" id="Creating_Links">
+      <header class="Section-Headers">Creating Links</header>
+      <p>Links are essential for navigating between documents and websites on the internet.</p>
+      <ul>
+  <li>Use meaningful text for your links to improve accessibility and SEO.</li>
+  <li>The `target="_blank"` attribute opens the link in a new tab or window, which is useful for external links.</li>
+  <li>Always include the `rel="noopener"` attribute when using `target="_blank"` to enhance security.</li>
+</ul>
+
+      <pre><code class="code">&lt;a href="https://example.com"&gt;Visit Example.com&lt;/a&gt;
+</code></pre>
+
+      </section>
+      <section class="main-section" id="Tables">
+      <header class="Section-Headers">Tables</header>
+      <p>Tables organize data in rows and columns, useful for presenting tabular information.</p>
+      <ul>
+  <li>Use the `thead`, `tbod`, and `tfoot` elements to structure your table semantically.</li>
+  <li>Include the `scope` attribute on `th` elements to define whether they apply to columns, rows, or groups of columns or rows.</li>
+  <li>For accessibility, consider using the `caption` element to provide a title or explanation for the table.</li>
+</ul>
+
+      <pre><code class="code">&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 1&lt;/td&gt;
+        &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+      </section>
+      <section class="main-section" id="Forms_and_Input">
+      <header class="Section-Headers">Forms and Input</header>
+      <p>Forms collect user input, which can range from text fields to buttons and more complex elements.</p>
+      <pre><code class="code">&lt;form action="/submit"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+</code></pre>
+      </section>
+  </main>
+
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  font-family: Arial;
+  background: #F9EED2;
+}
+
+#navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 100%;
+      overflow: auto;
+      outline: 1px solid black;
+    }
+#navbar .nav-link {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #000;    
+        }
+
+#navbar .nav-link:not(:first-child) {
+  border-top: 1px solid #000; 
+}
+
+#main-doc {
+      margin-left: 300px;
+      padding: 10px;
+      }
+
+.main-section {
+      padding: 15px;
+      margin: 5px 0;
+}
+
+@media (max-width: 767px) {
+      #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      
+      #main-doc {
+        margin-left: 0;
+      }
+    }
+
+.main-header{
+  font-size: 30px;
+  padding: 10px; 
+}
+
+.section-headers {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+pre, .code {
+  padding-left: 30px;
+  font-size: 13px;
+  background-color: #D0CCC1;
+  overflow: auto;
+}
+
+** end of undefined **
+
